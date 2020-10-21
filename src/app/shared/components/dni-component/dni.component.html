@@ -1,0 +1,16 @@
+<div class="titles">
+    <div class="container">
+        <div class="info">
+            <h1 class="titles__title">Validar DNI</h1>
+            <h2 class="titles__subtitle">Comprobar DNI, NIE o CIF españoles de acuerdo con la normativa vigente</h2>
+        </div>
+    </div>
+    <div class="form">
+        <input [(ngModel)]="dni" class="form__input" type="text" placeholder="DNI,NIE,CIF">
+        <button (click)="comprobar()" class="form__button">Comprobar</button>
+    </div>
+    <div class="dni__section" >
+        {{respuesta}}
+    </div>
+</div>
+
